@@ -5,6 +5,7 @@ import './index.css'
 import AppProvider from './context/AppContext.jsx'
 
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
    <AppProvider>
@@ -12,3 +13,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </AppProvider> 
   </React.StrictMode>,
 )
+

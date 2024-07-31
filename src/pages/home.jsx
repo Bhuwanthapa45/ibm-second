@@ -21,7 +21,7 @@ const Home = () => {
   })
   return (
     <div className='text-zinc-100  w-full '>
-        <Navbar/>
+        
         <div div data-scroll data-scroll-section data-scroll-speed='-.7' className='firstSection bg-zinc-900 h-[115vh]'>
         <div className='textstucture pl-[5vw] pt-[40vh] sm:pt-[20vh] text-[4.5vh] sm:text-[10vh] sm:leading-none inline-block'>
           <Link to="/courses-scholarship"><h1 className='hover:text-[#CDEA68]'>Explore Scholarship Globally</h1></Link>
@@ -143,12 +143,21 @@ const Home = () => {
   </div>
 
   <div className='bt-[1px] border-zinc-100   w-full block sm:flex gap-10 px-[10vh] gap-y-[10vh] sm:gap-y-[0vh]'>
-    <div className='cardcontainer w-full sm:w-1/2 h-[40vh] sm:h-[75vh]  rounded-xl  bg-slate-400 '>
-      
+    <div className='cardcontainer w-full sm:w-1/2 h-[40vh] sm:h-[75vh]  rounded-xl  bg-slate-400 block'>
+   <a href="https://alison.com/course/machine-learning-with-artificial-intelligence?utm_source=bing&utm_medium=cpc&utm_campaign=531498932&utm_content=1358998909448010&utm_term=kwd-84938597287859:loc-90&msclkid=4a6fd69776921060e959b03012c40d3b">
+   <img src="https://wallpapercave.com/wp/wp2316798.jpg" alt="" />
+   <h1 className='mt-[2vh] px-[2vw] font-semibold'>Machine Learning with Artificial Intelligence</h1>
+   </a>
+ 
 
+   
+   
     </div>
-    <div className='cardcontainer w-full sm:w-1/2 h-[40vh] sm:h-[75vh]  rounded-xl  bg-slate-800'>
-
+    <div className='cardcontainer w-full sm:w-1/2 h-[40vh] sm:h-[75vh]  rounded-xl  bg-slate-800 block'>
+    <a href="https://pll.harvard.edu/subject/business/free">
+      <img src="https://1.bp.blogspot.com/-cQk1EwTYQ1I/V1qEedsuv-I/AAAAAAAAAcM/1ur3d5sieyca91aiaFCCohJ5B5FDRH42QCLcB/s1600/hjb.jpg" alt="" />
+    <h1 className='mt-[2vh] px-[2vw] font-semibold'>Free Business Courses from Harvard</h1>
+    </a>
     </div>
 
   </div>

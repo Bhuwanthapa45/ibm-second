@@ -1,45 +1,16 @@
+import React from 'react'
 
-import React, { useEffect, useState } from 'react';
-// Ensure this is your fetchBooks function
-import Card from './card'; // Import the Card component
-import { fetchBooks } from '../api/fetchbook';
-
-const Ebook = () => {
-    const [books, setBooks] = useState([]);
-    const [error, setError] = useState(null);
-  
-    useEffect(() => {
-      const loadBooks = async () => {
-        try {
-          const data = await fetchBooks();
-          setBooks(data.books || []);
-        } catch (err) {
-          setError(err.message);
-        }
-      };
-      loadBooks();
-    }, []);
+const Ebook = ({ title, coverImage, author }) => {
   return (
-    <div className="container mx-auto px-4">
-    <h1 className="text-3xl font-bold text-center my-4">Book Cards</h1>
-    {error && <p className="text-red-500 text-center">{error}</p>}
-    <div className="flex flex-wrap justify-center">
-      {books.map((book, index) => (
-        <Card
-          key={index}
-          title={book.title}
-          author={book.author}
-          rating={book.rating}
-          publishYear={book.publishYear}
-        />
-      ))}
+    <div className="bg-zinc-800 border-zinc-600 rounded-lg shadow p-4 m-2 flex flex-col items-center">
+      <h3 className="text-lg font-semibold mb-2">{title}</h3>
+      <img src={coverImage} alt={`${title} cover`} className="w-32 h-48 object-cover mb-4 rounded-md" />
+      <p className="text-gray-600 mb-4">{author}</p>
+      <button className="mt-auto bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600">
+        Get Book
+      </button>
     </div>
-  </div>
-  )
-}
+  );
+};
+
 export default Ebook;
-        
-       
-
-
- 

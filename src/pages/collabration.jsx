@@ -1,11 +1,19 @@
 import React from 'react'
+import Collabrationcomponent from '../components/collabrationcomponent'
+import Navbar from '../components/navbar';
+import Footer from '../components/footer'
+
 
 const Collabration = () => {
   return (
-    <div>
-      <h1>Collabration Page</h1>
-    </div>
+    <>
+   
+   
+      <Collabrationcomponent/>
+      <Footer/>
+      
+      </>
   )
 }
 
-export default Collabration;
+export default Collabrationcomponent;
