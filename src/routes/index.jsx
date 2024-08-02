@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from '../components/navbar';
 import Home from '../pages/home';
 import Course from '../pages/course';
@@ -7,6 +7,7 @@ import ResourcesLibrary from '../pages/resourcesLibrary';
 import Studymanagement from '../pages/studyManagement';
 import Collabration from '../pages/collabration';
 import Scholarship from '../pages/scholarships';
+
 
 
 function AppRoutes() {
